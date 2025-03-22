@@ -1,1 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Sudheendra Huddar - Psychiatry & Addiction Specialist</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
+        body {
+            background-color: #f5f9fc;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 1rem auto;
+            border: 5px solid white;
+            overflow: hidden;
+        }
+
+        .profile-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        nav {
+            background: white;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #2a5298;
+            font-weight: 500;
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #1e3c72;
+            border-bottom: 2px solid #1e3c72;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: #f5f9fc;
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+
+        footer {
+            background: #1e3c72;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        /* Appointment Schedule Container */
+        .appointment-container {
+            width: 100%;
+            height: 800px; /* Adjust height as needed */
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+
+        .appointment-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* Google Map Container */
+        .map-container {
+            width: 100%;
+            height: 400px;
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* Call and WhatsApp Buttons */
+        .call-button, .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            padding: 10px 20px;
+            border-radius: 50px;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        .call-button {
+            left: 20px;
+            background-color: #25D366; /* Green color for WhatsApp */
+        }
+
+        .whatsapp-button {
+            right: 20px;
+            background-color: #075E54; /* Darker green for WhatsApp */
+        }
+
+        .call-button:hover, .whatsapp-button:hover {
+            opacity: 0.9;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+
+            .appointment-container {
+                height: 600px; /* Adjust height for smaller screens */
+            }
+
+            .map-container {
+                height: 300px;
+            }
+
+            .call-button, .whatsapp-button {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Call Now Button -->
+    <a href="tel:+912212345678" class="call-button">
+        📞 Call Now
+    </a>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/912212345678" class="whatsapp-button" target="_blank">
+        💬 WhatsApp
+    </a>
+
+    <header>
+        <h1>Dr. Sudheendra Huddar</h1>
+        <p>MBBS, DPM, MD (Psychiatry)</p>
+        <div class="profile-img">
+            <img src="dr-huddar.jpg" alt="Dr. Sudheendra Huddar">
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#expertise">Expertise</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#appointment">Appointment</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Dr. Huddar</h2>
+        <p>With over 15 years of experience in psychiatry and addiction medicine, Dr. Sudheendra Huddar is a renowned specialist in substance abuse disorders and mental health management. His patient-centric approach combines evidence-based treatments with compassionate care.</p>
+    </section>
+
+    <section id="expertise">
+        <h2>Areas of Expertise</h2>
+        <div class="expertise-grid">
+            <div class="card">
+                <h3>Addiction Psychiatry</h3>
+                <ul>
+                    <li>Alcohol & Substance Abuse</li>
+                    <li>Behavioral Addictions</li>
+                    <li>Relapse Prevention</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Therapeutic Approaches</h3>
+                <ul>
+                    <li>Cognitive Behavioral Therapy</li>
+                    <li>Motivational Interviewing</li>
+                    <li>Family Systems Therapy</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Professional Experience</h2>
+        <div class="card">
+            <h3>Current Positions</h3>
+            <ul>
+                <li>Consultant Psychiatrist - XYZ Hospital, Mumbai</li>
+                <li>Visiting Faculty - National Institute of Mental Health</li>
+            </ul>
+        </div>
+        <div class="card" style="margin-top: 1.5rem;">
+            <h3>Education</h3>
+            <ul>
+                <li>MD Psychiatry - AIIMS New Delhi</li>
+                <li>Diploma in Psychological Medicine</li>
+                <li>Fellowship in Addiction Psychiatry (UK)</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Google Appointment Schedule -->
+    <section id="appointment">
+        <h2>Book an Appointment</h2>
+        <div class="card">
+            <p>📅 Schedule your consultation using the calendar below:</p>
+            <div class="appointment-container">
+                <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3vFZe-rg2lhMgAM53k7L0CLX8A_KroKox8OrTXROkXWy4SAXiIH4a9DvDohmfJuAVHQx-3e--D?gv=true" style="border: 0" width="100%" height="600" frameborder="0"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Map for Clinic Location -->
+    <section id="contact">
+        <h2>Contact Information</h2>
+        <div class="card">
+            <p>📞 Consultation: +91 22 1234 5678</p>
+            <p>📧 Email: drhuddar@mentalhealthcare.com</p>
+            <p>🏥 Clinic Address: ABC Complex, Marine Drive, Mumbai</p>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.651944315575!2d72.8215093153845!3d18.93539698716389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7d1c06fffffff%3A0x2c1b9a6f6e9f6b1f!2sMarine%20Drive%2C%20Mumbai!5e0!3m2!1sen!2sin!4v1633081234567!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2023 Dr. Sudheendra Huddar. All rights reserved.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.9em;">Built by Nikhil Mahant</p>
+    </footer>
+</body>
+</html>
